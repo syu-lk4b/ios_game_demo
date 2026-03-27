@@ -2,9 +2,12 @@ import SwiftUI
 
 @main
 struct AIDungeonApp: App {
+    @State private var engine = GameEngine()
+    @State private var aiGenerator = AIContentGenerator()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(engine: engine, aiGenerator: aiGenerator)
         }
     }
 }
