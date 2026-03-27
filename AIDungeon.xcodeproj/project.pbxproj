@@ -7,11 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		042789A78687C5FF65B4792B /* Dungeon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40668DC8B92770E63C1BE649 /* Dungeon.swift */; };
 		0D1CD45E9A9DA5C82D4ABE91 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666A811CFCF910D60AADEE15 /* ContentView.swift */; };
+		1F2C3E146870F60A1243B1AA /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316212CABB78F9BE9D50F7A3 /* Room.swift */; };
 		2A3A1EAC097EA56FA8900EFE /* AIDungeonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DFC103D6938E62A66CDF1E /* AIDungeonTests.swift */; };
+		35CF83C81A949AAFCB106812 /* DungeonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4612EB16421AB1E74F71988B /* DungeonTests.swift */; };
+		366EACF1F035FC8176BB9001 /* StatsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8116BC1E1E69DEF4BBF6428B /* StatsTests.swift */; };
+		4A7EB102FA455A570CCC5E96 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352E4C4D1CB551FFAAE2115F /* Skill.swift */; };
 		68DFB4D99002F572AA6BF750 /* GameplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7B46D8483F6A784A4E21120 /* GameplayKit.framework */; };
+		743AE8EA186304E2438616E8 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376C6EE9141634D8BC7CECCB /* Position.swift */; };
 		7B4B8CE3291E717695501041 /* AIDungeonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B5688B276B8E0E955D89AA /* AIDungeonApp.swift */; };
+		7C44A251EB242D5F66B50BDB /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25A84C6B754350860260FF2 /* Monster.swift */; };
+		87E6D443B0E2798C2DD55F6C /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = A073134890F6A692709F3BE8 /* Stats.swift */; };
+		8D0C597665B1705BF8A5D9F6 /* PlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD44E507C61E48649D05A73 /* PlayerTests.swift */; };
+		900F0FF6FBC4732BFC8AA40F /* CharacterClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4F55A4101ACC78B5CFBAA6 /* CharacterClass.swift */; };
+		9F49357416BEE8545290E8E6 /* RoomEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EB41BC9D22A9689ECAA3BA /* RoomEvent.swift */; };
+		A883E353E4833A66B15CA468 /* MonsterBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2C7C841CC9125A29E56BCD /* MonsterBehavior.swift */; };
 		DE578ABE49B9E604CFD12AED /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF0E42754A16690ABA890DE /* SpriteKit.framework */; };
+		E5DED347577C8CFDB4ED9105 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBED7771A13C8A739E77CFC /* Player.swift */; };
+		FF1F6A0102466C67DEEE0F8D /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD26D29B546C4F794DE999CE /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,10 +39,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1CD44E507C61E48649D05A73 /* PlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTests.swift; sourceTree = "<group>"; };
+		1F4F55A4101ACC78B5CFBAA6 /* CharacterClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterClass.swift; sourceTree = "<group>"; };
+		316212CABB78F9BE9D50F7A3 /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		352E4C4D1CB551FFAAE2115F /* Skill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
+		376C6EE9141634D8BC7CECCB /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
+		40668DC8B92770E63C1BE649 /* Dungeon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dungeon.swift; sourceTree = "<group>"; };
 		4558F1754DCA616AFF71C784 /* AIDungeonTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = AIDungeonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4612EB16421AB1E74F71988B /* DungeonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DungeonTests.swift; sourceTree = "<group>"; };
 		666A811CFCF910D60AADEE15 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8116BC1E1E69DEF4BBF6428B /* StatsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsTests.swift; sourceTree = "<group>"; };
 		8CF0E42754A16690ABA890DE /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		9BBED7771A13C8A739E77CFC /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		A073134890F6A692709F3BE8 /* Stats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stats.swift; sourceTree = "<group>"; };
+		AD26D29B546C4F794DE999CE /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		B1EB41BC9D22A9689ECAA3BA /* RoomEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomEvent.swift; sourceTree = "<group>"; };
+		C25A84C6B754350860260FF2 /* Monster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
 		C3DFC103D6938E62A66CDF1E /* AIDungeonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIDungeonTests.swift; sourceTree = "<group>"; };
+		CE2C7C841CC9125A29E56BCD /* MonsterBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterBehavior.swift; sourceTree = "<group>"; };
 		E7B46D8483F6A784A4E21120 /* GameplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameplayKit.framework; path = System/Library/Frameworks/GameplayKit.framework; sourceTree = SDKROOT; };
 		E7B5688B276B8E0E955D89AA /* AIDungeonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIDungeonApp.swift; sourceTree = "<group>"; };
 		EFACACB9F5761ABA62FFD9FE /* AIDungeon.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = AIDungeon.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,12 +94,41 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		6DE6BEB0D8B3095CB199BE45 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1F4F55A4101ACC78B5CFBAA6 /* CharacterClass.swift */,
+				40668DC8B92770E63C1BE649 /* Dungeon.swift */,
+				AD26D29B546C4F794DE999CE /* Item.swift */,
+				C25A84C6B754350860260FF2 /* Monster.swift */,
+				CE2C7C841CC9125A29E56BCD /* MonsterBehavior.swift */,
+				9BBED7771A13C8A739E77CFC /* Player.swift */,
+				376C6EE9141634D8BC7CECCB /* Position.swift */,
+				316212CABB78F9BE9D50F7A3 /* Room.swift */,
+				B1EB41BC9D22A9689ECAA3BA /* RoomEvent.swift */,
+				352E4C4D1CB551FFAAE2115F /* Skill.swift */,
+				A073134890F6A692709F3BE8 /* Stats.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		A28F371043EE191B6B904FC1 /* AIDungeonTests */ = {
 			isa = PBXGroup;
 			children = (
 				C3DFC103D6938E62A66CDF1E /* AIDungeonTests.swift */,
+				ABC1FDE4908C44C2675ABA0E /* Models */,
 			);
 			path = AIDungeonTests;
+			sourceTree = "<group>";
+		};
+		ABC1FDE4908C44C2675ABA0E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4612EB16421AB1E74F71988B /* DungeonTests.swift */,
+				1CD44E507C61E48649D05A73 /* PlayerTests.swift */,
+				8116BC1E1E69DEF4BBF6428B /* StatsTests.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		B906E7F0388114A60A34479F /* Frameworks */ = {
@@ -88,6 +145,7 @@
 			children = (
 				E7B5688B276B8E0E955D89AA /* AIDungeonApp.swift */,
 				666A811CFCF910D60AADEE15 /* ContentView.swift */,
+				6DE6BEB0D8B3095CB199BE45 /* Models */,
 			);
 			path = AIDungeon;
 			sourceTree = "<group>";
@@ -166,6 +224,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A3A1EAC097EA56FA8900EFE /* AIDungeonTests.swift in Sources */,
+				35CF83C81A949AAFCB106812 /* DungeonTests.swift in Sources */,
+				8D0C597665B1705BF8A5D9F6 /* PlayerTests.swift in Sources */,
+				366EACF1F035FC8176BB9001 /* StatsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,7 +235,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B4B8CE3291E717695501041 /* AIDungeonApp.swift in Sources */,
+				900F0FF6FBC4732BFC8AA40F /* CharacterClass.swift in Sources */,
 				0D1CD45E9A9DA5C82D4ABE91 /* ContentView.swift in Sources */,
+				042789A78687C5FF65B4792B /* Dungeon.swift in Sources */,
+				FF1F6A0102466C67DEEE0F8D /* Item.swift in Sources */,
+				7C44A251EB242D5F66B50BDB /* Monster.swift in Sources */,
+				A883E353E4833A66B15CA468 /* MonsterBehavior.swift in Sources */,
+				E5DED347577C8CFDB4ED9105 /* Player.swift in Sources */,
+				743AE8EA186304E2438616E8 /* Position.swift in Sources */,
+				1F2C3E146870F60A1243B1AA /* Room.swift in Sources */,
+				9F49357416BEE8545290E8E6 /* RoomEvent.swift in Sources */,
+				4A7EB102FA455A570CCC5E96 /* Skill.swift in Sources */,
+				87E6D443B0E2798C2DD55F6C /* Stats.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
