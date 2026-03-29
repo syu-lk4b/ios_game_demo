@@ -1,0 +1,656 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		042789A78687C5FF65B4792B /* Dungeon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40668DC8B92770E63C1BE649 /* Dungeon.swift */; };
+		07967D3E06EAA5FFB2FD7F20 /* AIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D30A86EC163BBD2D0BC689D /* AIProvider.swift */; };
+		0D1CD45E9A9DA5C82D4ABE91 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666A811CFCF910D60AADEE15 /* ContentView.swift */; };
+		13F2F451BE1B7F897B93CEA4 /* DungeonMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C983B9061BE4205ACB66FDB5 /* DungeonMapView.swift */; };
+		162FAB9D67979D89543858A9 /* BattleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AFFBE567CFB80227A4A599 /* BattleView.swift */; };
+		1BADA3BCBEC7F0FB7642DB26 /* StreamingParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97076748AAA41C4CB39818EC /* StreamingParser.swift */; };
+		1F2C3E146870F60A1243B1AA /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316212CABB78F9BE9D50F7A3 /* Room.swift */; };
+		22B7CD48A48600C33538CD60 /* CharacterSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3927B45C1911014A3AF6ED /* CharacterSelectView.swift */; };
+		244F4C38AFE18CCC9EF97594 /* MonsterAITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C0DFC7B309D06ABC7D1DC0 /* MonsterAITests.swift */; };
+		2A3A1EAC097EA56FA8900EFE /* AIDungeonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DFC103D6938E62A66CDF1E /* AIDungeonTests.swift */; };
+		2AFC4683E709B2C77A74EDD0 /* ResponseParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0940B5EA9E6AD81CE7BB323 /* ResponseParserTests.swift */; };
+		2E74243BDBCCA665DD26A974 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302DC0C0DA654B63C3F45AEE /* GameState.swift */; };
+		33E354285CFBDB9092F9927B /* MonsterAI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3536A5293F1B6256DA086F1D /* MonsterAI.swift */; };
+		35CF83C81A949AAFCB106812 /* DungeonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4612EB16421AB1E74F71988B /* DungeonTests.swift */; };
+		366EACF1F035FC8176BB9001 /* StatsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8116BC1E1E69DEF4BBF6428B /* StatsTests.swift */; };
+		39AB2622F6E30274CBA11163 /* BattleEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2177641601161C1727E2D2E /* BattleEngine.swift */; };
+		3E60142A009C95965AFA5071 /* GameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3118B7716A9635606A900A /* GameOverView.swift */; };
+		42F35B1FA8E10F01085DF587 /* AIContentGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2D8569D37B964C04CEEC61 /* AIContentGenerator.swift */; };
+		476AFFB124DACAEE1A9FDE01 /* DungeonGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA53AAE45CF4F06D162ADD1D /* DungeonGeneratorTests.swift */; };
+		4A7EB102FA455A570CCC5E96 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352E4C4D1CB551FFAAE2115F /* Skill.swift */; };
+		57C365B7158B4EB17A7BED07 /* DungeonGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B9993D92E43987956832E9 /* DungeonGenerator.swift */; };
+		683E3855242BF3BEBB648108 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E668050DEA55508BC48128A /* ChatView.swift */; };
+		68DFB4D99002F572AA6BF750 /* GameplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7B46D8483F6A784A4E21120 /* GameplayKit.framework */; };
+		743AE8EA186304E2438616E8 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376C6EE9141634D8BC7CECCB /* Position.swift */; };
+		7ABA1727A34A563B2057BF5B /* StreamingParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D074133730455F7C3CFC2805 /* StreamingParserTests.swift */; };
+		7B079D66637A0EE8CA29FBF9 /* BattleResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D2A27EB74A63C60B273483 /* BattleResult.swift */; };
+		7B4B8CE3291E717695501041 /* AIDungeonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B5688B276B8E0E955D89AA /* AIDungeonApp.swift */; };
+		7B775ADD5BC8AA4B2808322A /* PromptBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13170D7AF99155E27F14D8BD /* PromptBuilderTests.swift */; };
+		7C44A251EB242D5F66B50BDB /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25A84C6B754350860260FF2 /* Monster.swift */; };
+		7CA35B388EB123DAE93BDFA3 /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286B08677FCF343BFD5180D4 /* ChatBubble.swift */; };
+		84221386DAC2FFC9A40C259F /* GameEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9653A05A150B237089DD30D5 /* GameEngine.swift */; };
+		8664276D78E4D7502ADFD57A /* OpenAIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8EE2EB40FE8ECC74EF6DE0 /* OpenAIClientTests.swift */; };
+		87E6D443B0E2798C2DD55F6C /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = A073134890F6A692709F3BE8 /* Stats.swift */; };
+		8D0C597665B1705BF8A5D9F6 /* PlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD44E507C61E48649D05A73 /* PlayerTests.swift */; };
+		900F0FF6FBC4732BFC8AA40F /* CharacterClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4F55A4101ACC78B5CFBAA6 /* CharacterClass.swift */; };
+		9F49357416BEE8545290E8E6 /* RoomEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EB41BC9D22A9689ECAA3BA /* RoomEvent.swift */; };
+		A393D0F78A15CE7ACADA12D2 /* OpenAIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19919D70D249B54E0DC1D38D /* OpenAIClient.swift */; };
+		A883E353E4833A66B15CA468 /* MonsterBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2C7C841CC9125A29E56BCD /* MonsterBehavior.swift */; };
+		B1A5BD822A1140C74874D7C6 /* ResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FBF94EC58904807FE6C2D1 /* ResponseParser.swift */; };
+		B565FDECFBA7C54924129734 /* PromptBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181915719BE435249F09E659 /* PromptBuilder.swift */; };
+		BB1E8EEBBE5387F0DB71EE49 /* BattleAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D11C082F0AC0AC2D39A6CC /* BattleAction.swift */; };
+		C87534CF2064FF656AFA33DC /* HUDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E5998A00DF97D3BB7A7FB5 /* HUDView.swift */; };
+		C95683910621DF005C48D1C3 /* FallbackContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB35C4882DC5FDC0504A761E /* FallbackContent.swift */; };
+		D3D57C447391080F4E716EAD /* InventoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BE55C6A912591FB08C1635 /* InventoryView.swift */; };
+		D488C08247F2F2C8DBEB722F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79082EA0F14EF610483DD06 /* SettingsView.swift */; };
+		DE578ABE49B9E604CFD12AED /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF0E42754A16690ABA890DE /* SpriteKit.framework */; };
+		E5DED347577C8CFDB4ED9105 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBED7771A13C8A739E77CFC /* Player.swift */; };
+		F2E2BB2017D4E3A0F932C2D3 /* GameEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C057BAB912D2D53AEA4BA35 /* GameEngineTests.swift */; };
+		FC4DFD552EFEEF23AA085ACF /* BattleEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673B5CBFB22387EF428BCBC3 /* BattleEngineTests.swift */; };
+		FE2DDFE3396F1B3B744A86F3 /* DungeonMapScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65496EDAB87069D98073EB8 /* DungeonMapScene.swift */; };
+		FF1F6A0102466C67DEEE0F8D /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD26D29B546C4F794DE999CE /* Item.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE6C41F9F0978314F641AA48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E56D4652CF1E17199B1EA344 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCE80EB3D80F7A23950AF94A;
+			remoteInfo = AIDungeon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D30A86EC163BBD2D0BC689D /* AIProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIProvider.swift; sourceTree = "<group>"; };
+		13170D7AF99155E27F14D8BD /* PromptBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptBuilderTests.swift; sourceTree = "<group>"; };
+		181915719BE435249F09E659 /* PromptBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptBuilder.swift; sourceTree = "<group>"; };
+		18E5998A00DF97D3BB7A7FB5 /* HUDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDView.swift; sourceTree = "<group>"; };
+		19919D70D249B54E0DC1D38D /* OpenAIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIClient.swift; sourceTree = "<group>"; };
+		1CD44E507C61E48649D05A73 /* PlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTests.swift; sourceTree = "<group>"; };
+		1F4F55A4101ACC78B5CFBAA6 /* CharacterClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterClass.swift; sourceTree = "<group>"; };
+		286B08677FCF343BFD5180D4 /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
+		302DC0C0DA654B63C3F45AEE /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
+		316212CABB78F9BE9D50F7A3 /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		352E4C4D1CB551FFAAE2115F /* Skill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
+		3536A5293F1B6256DA086F1D /* MonsterAI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterAI.swift; sourceTree = "<group>"; };
+		376C6EE9141634D8BC7CECCB /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
+		3E3118B7716A9635606A900A /* GameOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverView.swift; sourceTree = "<group>"; };
+		40668DC8B92770E63C1BE649 /* Dungeon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dungeon.swift; sourceTree = "<group>"; };
+		4558F1754DCA616AFF71C784 /* AIDungeonTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = AIDungeonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4612EB16421AB1E74F71988B /* DungeonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DungeonTests.swift; sourceTree = "<group>"; };
+		4C057BAB912D2D53AEA4BA35 /* GameEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameEngineTests.swift; sourceTree = "<group>"; };
+		51D11C082F0AC0AC2D39A6CC /* BattleAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleAction.swift; sourceTree = "<group>"; };
+		666A811CFCF910D60AADEE15 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		673B5CBFB22387EF428BCBC3 /* BattleEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleEngineTests.swift; sourceTree = "<group>"; };
+		74D2A27EB74A63C60B273483 /* BattleResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleResult.swift; sourceTree = "<group>"; };
+		7C8EE2EB40FE8ECC74EF6DE0 /* OpenAIClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIClientTests.swift; sourceTree = "<group>"; };
+		7E668050DEA55508BC48128A /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		8116BC1E1E69DEF4BBF6428B /* StatsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsTests.swift; sourceTree = "<group>"; };
+		8CF0E42754A16690ABA890DE /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		94BE55C6A912591FB08C1635 /* InventoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryView.swift; sourceTree = "<group>"; };
+		9653A05A150B237089DD30D5 /* GameEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameEngine.swift; sourceTree = "<group>"; };
+		97076748AAA41C4CB39818EC /* StreamingParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamingParser.swift; sourceTree = "<group>"; };
+		9B2D8569D37B964C04CEEC61 /* AIContentGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIContentGenerator.swift; sourceTree = "<group>"; };
+		9BBED7771A13C8A739E77CFC /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		A073134890F6A692709F3BE8 /* Stats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stats.swift; sourceTree = "<group>"; };
+		A2AFFBE567CFB80227A4A599 /* BattleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleView.swift; sourceTree = "<group>"; };
+		A5C0DFC7B309D06ABC7D1DC0 /* MonsterAITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterAITests.swift; sourceTree = "<group>"; };
+		A5FBF94EC58904807FE6C2D1 /* ResponseParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseParser.swift; sourceTree = "<group>"; };
+		A65496EDAB87069D98073EB8 /* DungeonMapScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DungeonMapScene.swift; sourceTree = "<group>"; };
+		A79082EA0F14EF610483DD06 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		AD26D29B546C4F794DE999CE /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		B1EB41BC9D22A9689ECAA3BA /* RoomEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomEvent.swift; sourceTree = "<group>"; };
+		BA53AAE45CF4F06D162ADD1D /* DungeonGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DungeonGeneratorTests.swift; sourceTree = "<group>"; };
+		BF3927B45C1911014A3AF6ED /* CharacterSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSelectView.swift; sourceTree = "<group>"; };
+		C2177641601161C1727E2D2E /* BattleEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleEngine.swift; sourceTree = "<group>"; };
+		C25A84C6B754350860260FF2 /* Monster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
+		C3DFC103D6938E62A66CDF1E /* AIDungeonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIDungeonTests.swift; sourceTree = "<group>"; };
+		C983B9061BE4205ACB66FDB5 /* DungeonMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DungeonMapView.swift; sourceTree = "<group>"; };
+		CE2C7C841CC9125A29E56BCD /* MonsterBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterBehavior.swift; sourceTree = "<group>"; };
+		D074133730455F7C3CFC2805 /* StreamingParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamingParserTests.swift; sourceTree = "<group>"; };
+		E7B46D8483F6A784A4E21120 /* GameplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameplayKit.framework; path = System/Library/Frameworks/GameplayKit.framework; sourceTree = SDKROOT; };
+		E7B5688B276B8E0E955D89AA /* AIDungeonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIDungeonApp.swift; sourceTree = "<group>"; };
+		EB35C4882DC5FDC0504A761E /* FallbackContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FallbackContent.swift; sourceTree = "<group>"; };
+		EFACACB9F5761ABA62FFD9FE /* AIDungeon.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = AIDungeon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0940B5EA9E6AD81CE7BB323 /* ResponseParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseParserTests.swift; sourceTree = "<group>"; };
+		F8B9993D92E43987956832E9 /* DungeonGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DungeonGenerator.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7BDBB08D518724B89E3A8202 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE578ABE49B9E604CFD12AED /* SpriteKit.framework in Frameworks */,
+				68DFB4D99002F572AA6BF750 /* GameplayKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04C203C67176B83FCA278E11 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A2AFFBE567CFB80227A4A599 /* BattleView.swift */,
+				BF3927B45C1911014A3AF6ED /* CharacterSelectView.swift */,
+				286B08677FCF343BFD5180D4 /* ChatBubble.swift */,
+				7E668050DEA55508BC48128A /* ChatView.swift */,
+				A65496EDAB87069D98073EB8 /* DungeonMapScene.swift */,
+				C983B9061BE4205ACB66FDB5 /* DungeonMapView.swift */,
+				3E3118B7716A9635606A900A /* GameOverView.swift */,
+				18E5998A00DF97D3BB7A7FB5 /* HUDView.swift */,
+				94BE55C6A912591FB08C1635 /* InventoryView.swift */,
+				A79082EA0F14EF610483DD06 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		14A2D668EC6078E4C8D9C4C7 = {
+			isa = PBXGroup;
+			children = (
+				EF3B9BF3757842A401E7A98E /* AIDungeon */,
+				A28F371043EE191B6B904FC1 /* AIDungeonTests */,
+				B906E7F0388114A60A34479F /* Frameworks */,
+				692D0BD4EEF2473086CC3994 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		584D9F3A0BEF8A211AA3231A /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				51D11C082F0AC0AC2D39A6CC /* BattleAction.swift */,
+				C2177641601161C1727E2D2E /* BattleEngine.swift */,
+				74D2A27EB74A63C60B273483 /* BattleResult.swift */,
+				F8B9993D92E43987956832E9 /* DungeonGenerator.swift */,
+				9653A05A150B237089DD30D5 /* GameEngine.swift */,
+				302DC0C0DA654B63C3F45AEE /* GameState.swift */,
+				3536A5293F1B6256DA086F1D /* MonsterAI.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		692D0BD4EEF2473086CC3994 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EFACACB9F5761ABA62FFD9FE /* AIDungeon.app */,
+				4558F1754DCA616AFF71C784 /* AIDungeonTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6DE6BEB0D8B3095CB199BE45 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1F4F55A4101ACC78B5CFBAA6 /* CharacterClass.swift */,
+				40668DC8B92770E63C1BE649 /* Dungeon.swift */,
+				AD26D29B546C4F794DE999CE /* Item.swift */,
+				C25A84C6B754350860260FF2 /* Monster.swift */,
+				CE2C7C841CC9125A29E56BCD /* MonsterBehavior.swift */,
+				9BBED7771A13C8A739E77CFC /* Player.swift */,
+				376C6EE9141634D8BC7CECCB /* Position.swift */,
+				316212CABB78F9BE9D50F7A3 /* Room.swift */,
+				B1EB41BC9D22A9689ECAA3BA /* RoomEvent.swift */,
+				352E4C4D1CB551FFAAE2115F /* Skill.swift */,
+				A073134890F6A692709F3BE8 /* Stats.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8CC1AFE68CD0292CF375A9B2 /* AI */ = {
+			isa = PBXGroup;
+			children = (
+				7C8EE2EB40FE8ECC74EF6DE0 /* OpenAIClientTests.swift */,
+				13170D7AF99155E27F14D8BD /* PromptBuilderTests.swift */,
+				F0940B5EA9E6AD81CE7BB323 /* ResponseParserTests.swift */,
+				D074133730455F7C3CFC2805 /* StreamingParserTests.swift */,
+			);
+			path = AI;
+			sourceTree = "<group>";
+		};
+		A28F371043EE191B6B904FC1 /* AIDungeonTests */ = {
+			isa = PBXGroup;
+			children = (
+				C3DFC103D6938E62A66CDF1E /* AIDungeonTests.swift */,
+				8CC1AFE68CD0292CF375A9B2 /* AI */,
+				D52859F5B42D3DCE26463AD6 /* Game */,
+				ABC1FDE4908C44C2675ABA0E /* Models */,
+			);
+			path = AIDungeonTests;
+			sourceTree = "<group>";
+		};
+		ABC1FDE4908C44C2675ABA0E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4612EB16421AB1E74F71988B /* DungeonTests.swift */,
+				1CD44E507C61E48649D05A73 /* PlayerTests.swift */,
+				8116BC1E1E69DEF4BBF6428B /* StatsTests.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ACDA0A20FF45F0AAA938D0E7 /* AI */ = {
+			isa = PBXGroup;
+			children = (
+				9B2D8569D37B964C04CEEC61 /* AIContentGenerator.swift */,
+				0D30A86EC163BBD2D0BC689D /* AIProvider.swift */,
+				EB35C4882DC5FDC0504A761E /* FallbackContent.swift */,
+				19919D70D249B54E0DC1D38D /* OpenAIClient.swift */,
+				181915719BE435249F09E659 /* PromptBuilder.swift */,
+				A5FBF94EC58904807FE6C2D1 /* ResponseParser.swift */,
+				97076748AAA41C4CB39818EC /* StreamingParser.swift */,
+			);
+			path = AI;
+			sourceTree = "<group>";
+		};
+		B906E7F0388114A60A34479F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7B46D8483F6A784A4E21120 /* GameplayKit.framework */,
+				8CF0E42754A16690ABA890DE /* SpriteKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D52859F5B42D3DCE26463AD6 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				673B5CBFB22387EF428BCBC3 /* BattleEngineTests.swift */,
+				BA53AAE45CF4F06D162ADD1D /* DungeonGeneratorTests.swift */,
+				4C057BAB912D2D53AEA4BA35 /* GameEngineTests.swift */,
+				A5C0DFC7B309D06ABC7D1DC0 /* MonsterAITests.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		EF3B9BF3757842A401E7A98E /* AIDungeon */ = {
+			isa = PBXGroup;
+			children = (
+				E7B5688B276B8E0E955D89AA /* AIDungeonApp.swift */,
+				666A811CFCF910D60AADEE15 /* ContentView.swift */,
+				ACDA0A20FF45F0AAA938D0E7 /* AI */,
+				584D9F3A0BEF8A211AA3231A /* Game */,
+				6DE6BEB0D8B3095CB199BE45 /* Models */,
+				04C203C67176B83FCA278E11 /* Views */,
+			);
+			path = AIDungeon;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C517E434A7D130B1C009C191 /* AIDungeonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19ADF6078CEBCEE95A243145 /* Build configuration list for PBXNativeTarget "AIDungeonTests" */;
+			buildPhases = (
+				7452EC1651E7D4AAB48F114D /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FEFB4D299D312BCB565D551F /* PBXTargetDependency */,
+			);
+			name = AIDungeonTests;
+			packageProductDependencies = (
+			);
+			productName = AIDungeonTests;
+			productReference = 4558F1754DCA616AFF71C784 /* AIDungeonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DCE80EB3D80F7A23950AF94A /* AIDungeon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFE77D4AC03B66463E033B6A /* Build configuration list for PBXNativeTarget "AIDungeon" */;
+			buildPhases = (
+				E2EC17370462DD436BA8DCB3 /* Sources */,
+				7BDBB08D518724B89E3A8202 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AIDungeon;
+			packageProductDependencies = (
+			);
+			productName = AIDungeon;
+			productReference = EFACACB9F5761ABA62FFD9FE /* AIDungeon.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E56D4652CF1E17199B1EA344 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = B075ACA3CA9E38F251774EF4 /* Build configuration list for PBXProject "AIDungeon" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 14A2D668EC6078E4C8D9C4C7;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DCE80EB3D80F7A23950AF94A /* AIDungeon */,
+				C517E434A7D130B1C009C191 /* AIDungeonTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7452EC1651E7D4AAB48F114D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A3A1EAC097EA56FA8900EFE /* AIDungeonTests.swift in Sources */,
+				FC4DFD552EFEEF23AA085ACF /* BattleEngineTests.swift in Sources */,
+				476AFFB124DACAEE1A9FDE01 /* DungeonGeneratorTests.swift in Sources */,
+				35CF83C81A949AAFCB106812 /* DungeonTests.swift in Sources */,
+				F2E2BB2017D4E3A0F932C2D3 /* GameEngineTests.swift in Sources */,
+				244F4C38AFE18CCC9EF97594 /* MonsterAITests.swift in Sources */,
+				8664276D78E4D7502ADFD57A /* OpenAIClientTests.swift in Sources */,
+				8D0C597665B1705BF8A5D9F6 /* PlayerTests.swift in Sources */,
+				7B775ADD5BC8AA4B2808322A /* PromptBuilderTests.swift in Sources */,
+				2AFC4683E709B2C77A74EDD0 /* ResponseParserTests.swift in Sources */,
+				366EACF1F035FC8176BB9001 /* StatsTests.swift in Sources */,
+				7ABA1727A34A563B2057BF5B /* StreamingParserTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2EC17370462DD436BA8DCB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42F35B1FA8E10F01085DF587 /* AIContentGenerator.swift in Sources */,
+				7B4B8CE3291E717695501041 /* AIDungeonApp.swift in Sources */,
+				07967D3E06EAA5FFB2FD7F20 /* AIProvider.swift in Sources */,
+				BB1E8EEBBE5387F0DB71EE49 /* BattleAction.swift in Sources */,
+				39AB2622F6E30274CBA11163 /* BattleEngine.swift in Sources */,
+				7B079D66637A0EE8CA29FBF9 /* BattleResult.swift in Sources */,
+				162FAB9D67979D89543858A9 /* BattleView.swift in Sources */,
+				900F0FF6FBC4732BFC8AA40F /* CharacterClass.swift in Sources */,
+				22B7CD48A48600C33538CD60 /* CharacterSelectView.swift in Sources */,
+				7CA35B388EB123DAE93BDFA3 /* ChatBubble.swift in Sources */,
+				683E3855242BF3BEBB648108 /* ChatView.swift in Sources */,
+				0D1CD45E9A9DA5C82D4ABE91 /* ContentView.swift in Sources */,
+				042789A78687C5FF65B4792B /* Dungeon.swift in Sources */,
+				57C365B7158B4EB17A7BED07 /* DungeonGenerator.swift in Sources */,
+				FE2DDFE3396F1B3B744A86F3 /* DungeonMapScene.swift in Sources */,
+				13F2F451BE1B7F897B93CEA4 /* DungeonMapView.swift in Sources */,
+				C95683910621DF005C48D1C3 /* FallbackContent.swift in Sources */,
+				84221386DAC2FFC9A40C259F /* GameEngine.swift in Sources */,
+				3E60142A009C95965AFA5071 /* GameOverView.swift in Sources */,
+				2E74243BDBCCA665DD26A974 /* GameState.swift in Sources */,
+				C87534CF2064FF656AFA33DC /* HUDView.swift in Sources */,
+				D3D57C447391080F4E716EAD /* InventoryView.swift in Sources */,
+				FF1F6A0102466C67DEEE0F8D /* Item.swift in Sources */,
+				7C44A251EB242D5F66B50BDB /* Monster.swift in Sources */,
+				33E354285CFBDB9092F9927B /* MonsterAI.swift in Sources */,
+				A883E353E4833A66B15CA468 /* MonsterBehavior.swift in Sources */,
+				A393D0F78A15CE7ACADA12D2 /* OpenAIClient.swift in Sources */,
+				E5DED347577C8CFDB4ED9105 /* Player.swift in Sources */,
+				743AE8EA186304E2438616E8 /* Position.swift in Sources */,
+				B565FDECFBA7C54924129734 /* PromptBuilder.swift in Sources */,
+				B1A5BD822A1140C74874D7C6 /* ResponseParser.swift in Sources */,
+				1F2C3E146870F60A1243B1AA /* Room.swift in Sources */,
+				9F49357416BEE8545290E8E6 /* RoomEvent.swift in Sources */,
+				D488C08247F2F2C8DBEB722F /* SettingsView.swift in Sources */,
+				4A7EB102FA455A570CCC5E96 /* Skill.swift in Sources */,
+				87E6D443B0E2798C2DD55F6C /* Stats.swift in Sources */,
+				1BADA3BCBEC7F0FB7642DB26 /* StreamingParser.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FEFB4D299D312BCB565D551F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCE80EB3D80F7A23950AF94A /* AIDungeon */;
+			targetProxy = BE6C41F9F0978314F641AA48 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0E3EB8CC4CD61B19D09EEFF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.syu.AIDungeon;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		14AE3BF51C9DA1AC45740DC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.syu.AIDungeon;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8E5DC3007DD986BD629BA491 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.syu.AIDungeonTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AIDungeon.app/AIDungeon";
+			};
+			name = Release;
+		};
+		9EDDA7CC9113D5BD391EB651 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		D2E3A7786D6E4F7B0EA1E753 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.syu.AIDungeonTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AIDungeon.app/AIDungeon";
+			};
+			name = Debug;
+		};
+		FD443975C6D065A76B623FD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		19ADF6078CEBCEE95A243145 /* Build configuration list for PBXNativeTarget "AIDungeonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2E3A7786D6E4F7B0EA1E753 /* Debug */,
+				8E5DC3007DD986BD629BA491 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		AFE77D4AC03B66463E033B6A /* Build configuration list for PBXNativeTarget "AIDungeon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14AE3BF51C9DA1AC45740DC4 /* Debug */,
+				0E3EB8CC4CD61B19D09EEFF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B075ACA3CA9E38F251774EF4 /* Build configuration list for PBXProject "AIDungeon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD443975C6D065A76B623FD0 /* Debug */,
+				9EDDA7CC9113D5BD391EB651 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E56D4652CF1E17199B1EA344 /* Project object */;
+}
